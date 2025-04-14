@@ -1,0 +1,153 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: whitesmoke;
+  color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; /* Padding removed from the top */
+}
+
+/* Header Styling */
+h1 {
+  text-align: left;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  gap: 30px; /* Adjusted spacing */
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+/* Form Section */
+.form-section {
+  flex: 1 1 45%; /* This makes the form take 45% of the available width */
+  margin-bottom: 30px;
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+}
+
+.form-section form {
+  display: grid;
+  gap: 10px;
+}
+
+.form-section form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-section form button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.form-section form button:hover {
+  background-color: #444;
+}
+
+.form-section form input:focus,
+.form-section form button:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* Table Section */
+.table-section {
+  flex: 2 1 55%; /* This makes the table take up the remaining space */
+  margin-top: 0px;
+}
+
+.expense-table {
+  width: 200%;
+  border-collapse: collapse;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 15px 20px; /* Increased padding for more space */
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+}
+
+.expense-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.expense-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.expense-table td button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 15px; /* More padding for the delete button */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expense-table td button:hover {
+  background-color: #d33;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.search-bar input {
+  padding: 20px; /* Increased padding for more height */
+  font-size: 1.2rem; /* Slightly larger font */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Ensures it fills the available space */
+  margin-bottom: 20px;
+  background-color: #fff;
+  height: 50px; /* Explicitly setting the height */
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #000;
+}
